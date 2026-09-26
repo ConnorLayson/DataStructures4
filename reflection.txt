@@ -1,0 +1,16 @@
+The stack is the perfect choice for an undo and redo system because you want to undo the most recent 
+actions first, as opposed to removing the first thing you wrote on your document. It would be counter-
+productive to remove the very first sentance of your book report, when the only part you messed up
+is the last sentance, and if we used a queue for our undos, we would be doing exactly that, but 
+with a stack system, we are doing exactly what we want by removing the last thing added. 
+
+The queue is best for a help desk because these are supposed to represent people waiting in a line,
+and if these are real people (like they would be in a help ticket system), then it would be unfair to 
+the person who submitted their ticket first, as they would be the last person to be helpped if we used a 
+stack. Not to mention that if anyone submitted more help tickets, that first person would only get pushed
+farther and farther back.
+
+These differ from python's built-in lists by not storing every value seperatly, but only storing the
+most important values' neighbors, and just re-assigning who's at the front of the line/top of the stack.
+This gives less controll over everything, like the order they are in, but in a use case like this, you
+don't really need to manipulate the order of anything. 
